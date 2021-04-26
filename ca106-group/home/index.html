@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="CA106 Group 2 Project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Games · Group 2</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f10b50bc14.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'scripts/particles.json')
+  </script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/animate.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="header-content">
+        <nav class="header-nav">
+          <ul>
+            <li><a id="logo" href="index.html">GAMES · GROUP 2</a></li>
+            <li><a href="../sections/alexandru/index.html">Alexandru</a></li>
+            <li><a href="../sections/andrew/index.html">Andrew</a></li>
+            <li><a href="../sections/james/index.html">James</a></li>
+            <li><a href="../sections/jed/index.html">Jed</a></li>
+            <li><a href="../sections/liam/index.html">Liam</a></li>
+            <li><a href="../sections/noah/index.html">Noah</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-content top">
+      <video class="main-splash" autoplay muted loop>
+        <source src="videos/splash.mp4" type="video/mp4">
+      </video>
+      <h1 class="title">🕹️ GAMES · GROUP 2 🎮 </h1>
+      <div class="splash">
+        <h2>Welcome</h2>
+        <p>
+          Welcome
+        </p>
+        <a href="#first"><button>LETS GET STARTED</button></a>
+      </div>
+    </div>
+
+    <div id="first" class="container-content animate fade">
+      <img class="box-image animate align-left slide" src="images/gaming_industry.png" alt="picture" />
+      <div class="content">
+        <h2>Gaming Industry</h2>
+        <p>
+          A look at how the gaming industry has changed from CD based games to
+          games being available to stream from a central server!
+        </p>
+        <a href="../sections/james/index.html"><button>TAKE ME THERE</button></a>
+      </div>
+    </div>
+
+    <div class='divider'></div>
+
+    <div class="container-content flipped animate fade">
+      <img class="box-image animate align-right slide"
+        src="https://metro.co.uk/wp-content/uploads/2020/05/UnrealEngine_blog_a-first-look-at-unreal-engine-5_Unreal_Engine_5_Gallery_2-2491x1400-8a288c8c4645d4dd51ab4323aa86b1405ff66df5-8878.jpg?quality=90&strip=all"
+        alt="picture" />
+      <div class="content">
+        <h2>Game Development</h2>
+        <p>
+          Dive into the world of game development! Learn how the worlds most
+          popular games are brought to life: from a simple idea to a finished product!
+        </p>
+        <a href="../sections/jed/index.html"><button>TAKE ME THERE</button></a>
+      </div>
+    </div>
+
+    <div class='divider'></div>
+
+    <div class="container-content animate fade">
+      <img class="box-image animate align-left slide" src="images/genre.png" alt="picture" />
+      <div class="content">
+        <h2>Genres</h2>
+        <p> Take a look at all the different types of games that exist! </p>
+        <a href="../sections/liam/index.html"><button>TAKE ME THERE</button></a>
+      </div>
+    </div>
+    <section id="contact">
+      <div>
+        <h2>Contact Me</h2>
+        <div class="content">
+          <form action="https://formspree.io/f/mvovbgap" method="post">
+            <div class="text">
+              <p>Name</p>
+              <input class="text-box" id="contact-name" type="text" name="contact-name" placeholder="Name" />
+            </div>
+            <div class="text">
+              <p>Email</p>
+              <input class="text-box" id="contact-email" type="email" name="contact-email" placeholder="Email" />
+            </div>
+            <div class="text">
+              <p>Phone</p>
+              <input class="text-box" id="contact-phone" type="tel" name="contact-phone" placeholder="Phone number" />
+            </div>
+            <div class="text">
+              <p>Message</p>
+              <textarea class="text-box" id="contact-message" name="contact-message" rows="5"
+                placeholder="Message"></textarea>
+            </div>
+            <div>
+              <input class="button" type="submit" value="Send my message" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

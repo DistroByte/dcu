@@ -1,0 +1,14 @@
+.container-content #particles-js {
+  background-image: url('../images/splash.jpg');
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.container-content img.box-image {
+  border: 10px #111111;
+  border-radius: 50px;
+}
+
+.justify {
+  text-align: left;
+}

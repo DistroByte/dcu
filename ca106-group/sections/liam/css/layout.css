@@ -1,0 +1,36 @@
+.container-content #particles-js {
+  background-image: url('../images/sb.jpg');
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.title {
+  text-align: center;
+}
+
+.main {
+  
+  margin: 20px 100px
+}
+
+.pic {
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.discs {
+  display: flex;
+  text-align: center;
+  padding: 10px 10px;
+}

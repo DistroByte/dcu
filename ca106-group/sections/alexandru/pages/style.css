@@ -1,0 +1,42 @@
+
+.container-content #particles-js {
+  background-image: url('../images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main {
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 20px;
+}
+
+.main p {
+  font-size: 27px;
+  line-height: normal;
+  margin: 20px 100px;
+}
+
+.pic {
+  text-align: center;
+}
+
+.discs {
+  display: flex;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.disc {
+  flex: 30%;
+  padding: 3px;
+}
+
+canvas {
+    border: 1px solid white;
+  }

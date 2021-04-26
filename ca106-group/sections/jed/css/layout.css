@@ -1,0 +1,437 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: #111111;
+}
+
+header {
+  /* fixes header bar to top and stretches full width */
+  z-index: 9;
+  background-color: rgba(22, 22, 22, 0.95);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li a[href] {
+  float: right; /* floats nav elements to right of header */
+  display: block;
+  color: rgb(201, 201, 201);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: hidden;
+  transition: 0.2s;
+}
+/* every element's bottom border hidden on default, until hovered over.
+added transition for cool effect */
+
+header li a[href]:not(#logo):hover {
+  padding: 12px 16px;
+  color: white;
+  border-bottom: 4px solid #1e8ad6;
+}
+
+header li a[id='logo'][href] {
+  font-family: 'Raleway', sans-serif;
+  float: left;
+  color: white;
+}
+
+.container-content #particles-js {
+  /* controls the particles-js div size and colour */
+  height: 50vh;
+  width: 100%;
+  border-bottom: 2px solid rgb(46, 46, 46);
+  padding: 0;
+  margin: 0;
+}
+
+.container-content.main {
+  background-image:
+    radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://metro.co.uk/wp-content/uploads/2020/05/UnrealEngine_blog_a-first-look-at-unreal-engine-5_Unreal_Engine_5_Gallery_2-2491x1400-8a288c8c4645d4dd51ab4323aa86b1405ff66df5-8878.jpg?quality=90&strip=all");
+  background-size: cover;
+}
+
+.container-content.pre-production {
+  background-image:
+    radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://i.pinimg.com/originals/0d/09/6f/0d096fda103ba3174ea1ab7cc67811df.jpg");
+  background-size: cover;
+  background-position: 50% 90%;
+}
+
+.container-content.production {
+  background-image:
+    radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://docs.unrealengine.com/Images/WhatsNew/Builds/ReleaseNotes/4_23/Banner_01.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.container-content .title {
+  color: white;
+  font-size: 42px;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin-top: 20vh;
+  left: 50%;
+}
+
+.container-content .title.px225 {
+  margin-left: -225px;
+}
+
+.container-content .title.px200 {
+  margin-left: -200px;
+}
+
+.container-content .title.px120 {
+  margin-left: -120px;
+}
+
+.divider {
+  margin: 60px auto;
+  height: 1px;
+  width: 75%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.container-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-content#splash {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.container-content * {
+  flex: 1;
+}
+
+.container-content .content *:not(button) {
+  margin: 20px 0 20px;
+}
+
+.container-content .content {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.container-content .content.image {
+  margin: 10px;
+}
+
+.container-content .content.image {
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+  padding: 30px;
+}
+.container-content .content.pre-production {
+  background:
+    radial-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.9)
+      ),
+    url("https://cdna.artstation.com/p/assets/images/images/000/546/256/large/michelle-hoefener-21-valkyrie-concept-sketches.jpg?1426332577");
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.container-content .content.production {
+  background:
+    radial-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.9)
+      ),
+    url("https://i.pinimg.com/originals/d8/05/e6/d805e676f44cab2c62ac047712c2b08b.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.container-content .content.launch {
+  background:
+    radial-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.9)
+      ),
+    url("https://i.pinimg.com/originals/2e/a5/95/2ea59586f246f97a534bc357e58acbbf.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.container-content .content.roles {
+  padding-left: 60px;
+  background:
+    linear-gradient(
+        to left,
+        rgba(255, 0, 212, 0.2),
+        rgba(255, 0, 212, 0.05),
+        rgba(20, 20, 20, 0.95),
+        #111111
+      ),
+    url("https://res.cloudinary.com/highereducation/image/upload/f_auto,fl_lossy,q_auto/c_fill,w_1200,h_628/v1/rankings/featured/associate-game-design.jpg");
+  background-size: cover;
+}
+
+.container-content .content.roles-2 {
+  background:
+    radial-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.9)
+      ),
+    url("https://res.cloudinary.com/highereducation/image/upload/f_auto,fl_lossy,q_auto/c_fill,w_1200,h_628/v1/rankings/featured/associate-game-design.jpg");
+  background-size: cover;
+}
+
+.container-content .content.pre-production-2 {
+  padding-left: 60px;
+  background:
+    linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0),
+        rgba(20, 20, 20, 0.5),
+        rgba(20, 20, 20, 0.9),
+        #111111
+      ),
+    url("https://cdna.artstation.com/p/assets/images/images/000/546/256/large/michelle-hoefener-21-valkyrie-concept-sketches.jpg?1426332577");
+  background-position: 110% 30%;
+}
+
+.container-content .content.production-2 {
+  padding-left: 60px;
+  background:
+    linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0),
+        rgba(20, 20, 20, 0.5),
+        rgba(20, 20, 20, 0.9),
+        #111111
+      ),
+    url("https://i.pinimg.com/originals/d8/05/e6/d805e676f44cab2c62ac047712c2b08b.jpg");
+  background-position: 100% 50%;
+}
+
+.container-content .content.launch-2 {
+  padding-left: 60px;
+  background:
+    linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0),
+        rgba(20, 20, 20, 0.5),
+        rgba(20, 20, 20, 0.9),
+        #111111
+      ),
+    url("https://i.pinimg.com/originals/2e/a5/95/2ea59586f246f97a534bc357e58acbbf.jpg");
+  background-position: 100% 50%;
+}
+
+.container-content .content.pre-production-3 {
+  padding-left: 60px;
+  background:
+    linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0),
+        rgba(20, 20, 20, 0.5),
+        rgba(20, 20, 20, 0.9),
+        #111111
+      ),
+    url("https://art.ngfiles.com/images/1494000/1494949_faejunkie_winter-banner.png?f1604686244");
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+.container-content .content.roles * {
+  max-width: 40%;
+}
+
+.flipped {
+  flex-direction: row-reverse;
+}
+
+.container-content .box-image {
+  width: 30%;
+  height: 27vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: none;
+}
+
+.container-content h2 {
+  letter-spacing: 0.05em;
+  font-size: 32px;
+  line-height: 1.5em;
+}
+
+.container-content p {
+  font-size: 18px;
+  line-height: 1.75em;
+  max-width: 40vw;
+}
+
+.container-content button {
+  padding: 15px 45px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid rgb(0, 156, 228);
+  border-radius: 3px;
+  margin: 20px 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 156, 228);
+}
+
+a[href] {
+  text-decoration-style: none;
+  color: #1e8ad6;
+}
+
+a[href]:hover {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+footer {
+  height: 300px;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  background-color: rgb(20, 20, 20)
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.animate {
+  transition: all 0.5s;
+}
+
+.animate.align-left.slide {
+  transform: translateX(-10%) scale(0.95);
+}
+
+.animate.align-right.slide {
+  transform: translateX(10%) scale(0.95);
+}
+
+.animate.slide.active {
+  transform: translateX(0%) scale(1);
+}
+
+.animate.fade {
+  transition: 0.7s;
+	opacity: 0;
+}
+
+.animate.fade.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+
+  .container-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-content .box-image {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-content .splash {
+    width: 100%;
+    margin: 40vh 0 0;
+    padding: 30px 0;
+  }
+
+  .container-content p, 
+  .container-content .splash * {
+    max-width: 70vw;
+  }
+
+  .container-content .animate.align-left.slide, 
+  .container-content .animate.align-right.slide {
+    transform: translateX(0) scale(1);
+  }
+
+  .flipped div *:not(button) {
+    margin: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.container-content #particles-js {
+  background-image: url('/sections/andrew/images/platformlogos.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+}
+
+.main {
+  margin: 20px 100px;
+}
+
+.pic {
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
